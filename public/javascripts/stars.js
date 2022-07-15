@@ -5,7 +5,7 @@
  */
 
 // Settings
-var particleCount = 40,
+var particleCount = 20,
     flareCount = 10,
     motion = 0.05,
     tilt = 0.05,
@@ -15,11 +15,11 @@ var particleCount = 40,
     flareSizeBase = 100,
     flareSizeMultiplier = 100,
     lineWidth = 1,
-    linkChance = 75, // chance per frame of link, higher = smaller chance
+    linkChance = 50, // chance per frame of link, higher = smaller chance
     linkLengthMin = 8, // min linked vertices
     linkLengthMax = 10, // max linked vertices
     linkOpacity = 0.25; // number between 0 & 1
-linkFade = 90, // link fade-out frames
+    linkFade = 90, // link fade-out frames
     linkSpeed = 1, // distance a link travels in 1 frame
     glareAngle = -60,
     glareOpacityMultiplier = 0.05,
