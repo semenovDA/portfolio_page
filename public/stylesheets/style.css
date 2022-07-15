@@ -13,6 +13,9 @@
 @import "animation/particles.css";
 @import "animation/laptop.css";
 @import "animation/arrow.css";
+@import "animation/quote.css";
+@import "animation/stars.css";
+@import "collapse.css";
 
 /*--------------------------------------------------------------
 # Fonts import
@@ -1244,3 +1247,25 @@ section {
   font-size: 13px;
 }
 
+/* Parents */
+#parents {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#parents h2 {
+  margin: 20px;
+  font-size: 24px;
+}
+
+/* Parents */
+#parents h3 {
+  margin: 20px;
+  font-size: 18px;
+  font-style: oblique;
+}
+
+#parents h4 {
+  font-size: 22px;
+  font-weight: 700;
+}
