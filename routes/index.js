@@ -11,4 +11,9 @@ router.get('/parents', function(req, res, next) {
   res.render('pages/parents');
 });
 
+/* GET home page. */
+router.get('/about_me', function(req, res, next) {
+  res.render('pages/about_me');
+});
+
 module.exports = router;

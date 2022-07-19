@@ -347,15 +347,15 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-#hero .btn-scroll {
+.btn-scroll {
   transition: 0.4s;
   color: rgba(0, 0, 0, 0.6);
   animation: up-down 1s ease-in-out infinite alternate-reverse both;
 }
-#hero .btn-scroll i {
+.btn-scroll i {
   font-size: 48px;
 }
-#hero .btn-scroll:hover {
+.btn-scroll:hover {
   color: #ffb727;
 }
 
@@ -1334,4 +1334,57 @@ section {
   grid-column-end: 7;
   grid-row-start: 9;
   grid-row-end: 11;
+}
+
+/*
+    CARD SECTION
+*/
+
+.cards {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.cards h1{
+  font-size: 30px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.cards p{
+  font-size: 20px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.cards .card{
+  border: 0;
+  border-radius: 10px;
+  background-color: #2f3dae;
+  padding: 50px;
+  margin: 20px;
+  max-width: 65%;
+}
+
+/*
+  Kids gallery section
+*/
+
+#kids_gallery {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
