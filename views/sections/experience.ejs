@@ -1,0 +1,67 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+
+<section id="experience" class="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <span>Распространение опыта</span>
+                <h2>Распространение опыта</h2>
+            </div>
+            <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
+            <%-include('../elements/experience_gallery')%>
+            <div class="gallery">
+                <% for(let i = 1; i < 14; i++) {
+                    let path = "images/certificates/" +  (i < 10 ? "00" : "0") +
+                            i.toString() + '.jpg'
+                %>
+                    <a href="<%=path%>" class="glightbox3" data-gallery="gallery1">
+                        <div class="gallery-item revealFadeIn">
+                            <img class="gallery-image" alt="image" src="<%=path%>">
+                        </div>
+                    </a>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</section><!-- End My Resume Section -->
+
+<script>
+
+    function revealFadeIn() {
+        let reveals = document.querySelectorAll(".gallery .revealFadeIn");
+        for (let i = 0; i < reveals.length; i++) {
+            let windowHeight = window.innerHeight;
+            let elementTop = reveals[i].getBoundingClientRect().top;
+            let elementVisible = 100;
+            if (elementTop < windowHeight - elementVisible) {
+                let duration = (i.toString().length === 1 ? '0.' + i.toString() + 's' : '1.'
+                    + (i % 9).toString() + 's')
+
+                reveals[i].style.setProperty('--animate-duration', duration);
+                reveals[i].classList.add("animate__animated")
+                reveals[i].classList.add("animate__fadeIn");
+                reveals[i].style.visibility = "visible"
+            }
+        }
+    }
+
+    window.addEventListener("scroll", revealFadeIn);
+    revealFadeIn();
+
+</script>
+
+<script type="text/javascript">
+    const lightbox = GLightbox({
+        selector:  '.glightbox3',
+        touchNavigation: true,
+        loop: true,
+        autoplayVideos: true,
+        onOpen: () => {
+
+        },
+        beforeSlideLoad: (slide, data) => {
+
+        }
+    });
+</script>

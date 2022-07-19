@@ -10,5 +10,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="typed.js" level="application" />
     <orderEntry type="library" name="particlesjs" level="application" />
+    <orderEntry type="library" name="animate.css" level="application" />
+    <orderEntry type="library" name="glightbox" level="application" />
   </component>
 </module>
