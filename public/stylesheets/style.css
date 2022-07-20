@@ -1287,7 +1287,7 @@ section {
 .family_gallery {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(8, 10vw);
+  grid-template-rows: repeat(12, 10vw);
   grid-gap: 15px;
 }
 
@@ -1320,9 +1320,31 @@ section {
 
 .family_gallery .gallery__item--3 {
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 7;
   grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-end: 4;
+  z-index: 5;
+}
+
+.family_gallery .gallery__item--4 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 8;
+}
+
+.family_gallery .gallery__item--5 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 8;
+}
+
+.family_gallery .gallery__item--6 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 4;
+  grid-row-end: 8;
 }
 
 /*
