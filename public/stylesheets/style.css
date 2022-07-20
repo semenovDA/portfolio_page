@@ -15,6 +15,8 @@
 @import "animation/arrow.css";
 @import "animation/quote.css";
 @import "animation/stars.css";
+@import "animation/sunrise.css";
+@import "animation/dashed_arrow.css";
 @import "collapse.css";
 @import "gallery.css";
 
@@ -431,6 +433,7 @@ section {
   text-align: center;
   padding: 30px 0;
   position: relative;
+  z-index: 12;
 }
 .section-title h2 {
   font-size: 32px;
@@ -1192,6 +1195,7 @@ section {
   padding: 80px 0;
   position: relative;
 }
+
 #footer::before {
   content: "";
   position: absolute;
@@ -1276,6 +1280,50 @@ section {
 .revealInLeft, .revealFadeInDown, .glightbox3{
   visibility: hidden;
 }
+/*
+  My family gallery
+*/
+
+.family_gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 10vw);
+  grid-gap: 15px;
+}
+
+.family_gallery .block {
+  background: #0d6efd;
+  color: #FFFFFF;
+  font-size: 24px;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.family_gallery h2 {
+  color: #FFFFFF;
+  font-weight: 800;
+}
+
+.family_gallery .gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+.family_gallery .gallery__item--2 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.family_gallery .gallery__item--3 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
 
 /*
   experience gallery
@@ -1343,6 +1391,7 @@ section {
 .cards {
   font-size: 34px;
   font-weight: 700;
+  z-index: 12;
 }
 
 .cards h1{
@@ -1457,5 +1506,27 @@ section {
 }
 
 /*
-  Links
+  Content
 */
+
+.content_links {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.content_links .block {
+  margin: 30px 100px;
+  padding: 20px 10px;
+  background: #0a58ca;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+/*
+  My family
+*/
+
+#my_family {
+  height: 100%
+}
