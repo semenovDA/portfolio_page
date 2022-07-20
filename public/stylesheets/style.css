@@ -1284,6 +1284,11 @@ section {
   My family gallery
 */
 
+#my_family {
+  background: rgb(55,51,133);
+  background: linear-gradient(90deg, rgba(55,51,133,1) 0%, rgba(70,139,135,1) 49%, rgba(67,213,169,1) 100%);
+}
+
 .family_gallery {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
