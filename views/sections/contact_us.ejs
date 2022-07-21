@@ -1,0 +1,97 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<section id="contact">
+    <div class="contact-box">
+        <div class="contact-links">
+            <h2>Обратная связь</h2>
+            <div class="links">
+                <div class="link">
+                    <a class="text-black-50" href="viber://chat?number=%2B79021688528">
+                        <i class="fab fa-3x fa-viber"></i>
+                    </a>
+                </div>
+                <div class="link">
+                    <a class="text-black-50" href="whatsapp://send?text=Здравствуйте!&phone=+79021688528">
+                        <i class="fab fa-3x fa-whatsapp" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="link">
+                    <a class="text-black-50" href="mailto:npokatskay@mail.ru">
+                        <i class="fa fa-3x fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="contact-form-wrapper">
+            <form id="jquery_form">
+                <div class="form-item">
+                    <input type="text" name="sender" required>
+                    <label>Имя:</label>
+                </div>
+                <div class="form-item">
+                    <input type="text" name="subject" required>
+                    <label>Тема:</label>
+                </div>
+                <div class="form-item">
+                    <input type="text" name="email" required>
+                    <label>Эл. почта:</label>
+                </div>
+                <div class="form-item">
+                    <textarea name="message" required></textarea>
+                    <label>Сообщение:</label>
+                </div>
+                <button class="submit-btn" name="send" value="Send">Send</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<script>
+
+    //update this with your $form selector
+    var form_id = "jquery_form";
+
+    var data = {
+        "access_token": "kgddp7td6uqyb19lfe7a44dj"
+    };
+
+    function onSuccess() {
+        // remove this to avoid redirect
+        window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
+    }
+
+    function onError(error) {
+        // remove this to avoid redirect
+        window.location = window.location.pathname + "?message=Email+could+not+be+sent.&isError=1";
+    }
+
+    var sendButton = $("#" + form_id + " [name='send']");
+
+    function send() {
+        sendButton.val('Sending…');
+        sendButton.prop('disabled',true);
+
+        var subject = $("#" + form_id + " [name='subject']").val();
+        var message = "Обратная свзяь со сайта от " +
+            $("#" + form_id + " [name='sender']").val() + " (" +
+            $("#" + form_id + " [name='email']").val() + "): " +
+            $("#" + form_id + " [name='message']").val();
+
+        data['subject'] = subject;
+        data['text'] = message;
+
+        $.post('https://postmail.invotes.com/send',
+            data,
+            onSuccess
+        ).fail(onError);
+
+        return false;
+    }
+
+    sendButton.on('click', send);
+
+    var $form = $("#" + form_id);
+    $form.submit(function( event ) {
+        event.preventDefault();
+    });
+</script>

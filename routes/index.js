@@ -27,4 +27,9 @@ router.get('/experience', function(req, res, next) {
   res.render('pages/experience');
 });
 
+/* GET home page. */
+router.get('/contact_us', function(req, res, next) {
+  res.render('pages/contacts');
+});
+
 module.exports = router;
