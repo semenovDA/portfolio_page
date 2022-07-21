@@ -16,7 +16,7 @@
 @import "animation/quote.css";
 @import "animation/stars.css";
 @import "animation/sunrise.css";
-@import "animation/dashed_arrow.css";
+@import "animation/books.css";
 @import "collapse.css";
 @import "gallery.css";
 
@@ -42,6 +42,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -340,6 +341,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 74px;
   font-family: "Emirald Script", serif;
   color: #3b434a;
+  text-align: center;
 }
 #hero h2 {
   color: #3b434a;
@@ -1505,11 +1507,11 @@ section {
   font-weight: 100;
 }
 
-#kids_gallery ul {
+/* Responsive image gallery rules begin*/
+
+#kids_gallery ul, #weekdays ul {
   list-style: none;
 }
-
-/* Responsive image gallery rules begin*/
 
 .image-gallery {
   display: flex;
@@ -1583,4 +1585,97 @@ section {
 
 #my_family {
   height: 100%
+}
+
+/*
+  My hobbies
+*/
+#my_hobbies {
+  padding: 10px;
+}
+
+#my_hobbies .block {
+  margin: 50px;
+  padding: 50px;
+  background: #2b9891;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+/*
+  interview
+*/
+
+.interview {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  margin: 0 50px;
+}
+
+.interview iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*
+  events
+*/
+.events {
+  color: #FFFFFF;
+}
+
+.events h2{
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.events li{
+  list-style-type: square;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+.events a {
+  color: #FFFFFF;
+  transition-duration: 1s;
+}
+
+.events a:hover{
+  color: #cccccc;
+}
+
+.events .row {
+  background: #2b9891;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.events a.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+/*
+  NEWS
+*/
+
+.news {
+  padding-top: 100px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+/*
+  publications
+*/
+#publications {
+  font-size: 22px;
+  font-weight: 600;
 }
