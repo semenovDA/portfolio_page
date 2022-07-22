@@ -17,5 +17,6 @@
     <orderEntry type="library" name="swiper" level="application" />
     <orderEntry type="library" name="@srexi/purecounterjs" level="application" />
     <orderEntry type="library" name="jquery-3.5.1.slim" level="application" />
+    <orderEntry type="library" name="gsap" level="application" />
   </component>
 </module>

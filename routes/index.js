@@ -13,23 +13,29 @@ router.get('/parents', function(req, res, next) {
 
 /* GET home page. */
 router.get('/about_me', function(req, res, next) {
-  if('id' in req.query) return next();
+
   res.render('pages/about_me');
 });
 
 /* GET home page. */
-router.get('/about_me', function(req, res, next) {
-  res.render('news/' + req.query.id);
+router.get('/experience', function(req, res, next) {
+  if('id' in req.query) return next();
+  res.render('pages/experience');
 });
 
 /* GET home page. */
 router.get('/experience', function(req, res, next) {
-  res.render('pages/experience');
+  res.render('news/' + req.query.id);
 });
 
 /* GET home page. */
 router.get('/contact_us', function(req, res, next) {
   res.render('pages/contacts');
+});
+
+/* GET home page. */
+router.get('/colleagues', function(req, res, next) {
+  res.render('pages/colleagues');
 });
 
 module.exports = router;

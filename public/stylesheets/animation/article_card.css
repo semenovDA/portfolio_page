@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap");
+
+#public_activity {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 1.65;
+    color: #ffffff;
+    margin: 0;
+    height: 100%;
+}
+
+#public_activity a {
+    text-decoration: none;
+}
+
+#public_activity .container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 40px;
+}
+
+#public_activity .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#public_activity .col {
+    width: 32%;
+}
+
+@media (max-width: 576px) {
+    #public_activity .row {
+        display: block;
+    }
+    #public_activity .row .col {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+}
+#public_activity h1,
+#public_activity h2,
+#public_activity h3,
+#public_activity h4,
+#public_activity h5,
+#public_activity h6 {
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+}
+
+#public_activity .card {
+    background: #2f2d44;
+    margin-top: 1.5rem;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease-in-out;
+}
+#public_activity .card:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+#public_activity .card:focus {
+    -webkit-box-shadow: 0 0 0 3px #22223a, 0 0 0 4px #38beea;
+    box-shadow: 0 0 0 3px #22223a, 0 0 0 5px #38beea;
+    outline: none;
+    border-radius: 2px;
+    z-index: 1090;
+    position: relative;
+}
+#public_activity .card h2 {
+    font-size: 1.25rem;
+    margin: 0;
+}
+#public_activity .card .card-content {
+    padding: 2rem;
+    min-height: 110px;
+    padding-bottom: 1rem;
+}
+#public_activity .card .card-content .kicker {
+    color: #38beea;
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.16rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+#public_activity .card .card-content p {
+    color: #adacb5;
+}
+#public_activity .card .card-content p:last-of-type {
+    margin-bottom: 0;
+}
+#public_activity .card .card-image img {
+    width: 100%;
+    height: auto;
+}
+#public_activity .card .card-footer {
+    position: relative;
+}
+#public_activity .card .card-footer .icon {
+    position: absolute;
+    right: 2rem;
+    max-width: 20px;
+    top: 50%;
+    margin-top: -10px;
+    transition: color 0.3s;
+}
+#public_activity .card .card-footer a {
+    background: transparent;
+    border: none;
+    color: #fff;
+    padding: 1.25rem 2rem;
+    width: 100%;
+    text-align: left;
+    display: block;
+    opacity: 0;
+    position: relative;
+    top: 3px;
+    font-weight: 400;
+    transition: opacity 0.3s, top 0.3s ease 0s;
+}
+#public_activity .card .card-footer a:hover, #public_activity .card .card-footer a:focus {
+    text-decoration: none;
+    opacity: 1;
+    top: 0;
+}
+#public_activity .card .card-footer a:focus {
+    box-shadow: inset 0 0 0 2px #38beea;
+    outline: none;
+    border-radius: 2px;
+    z-index: 1090;
+    position: relative;
+}
+#public_activity .card .card-footer:after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: #38beea;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s;
+}
+#public_activity .card .card-footer:hover:after {
+    width: 100%;
+}
+#public_activity .card:hover .card-footer .icon, #public_activity .card:focus .card-footer .icon {
+    color: #38beea;
+}
+#public_activity .card:hover .card-footer a, #public_activity .card:focus .card-footer a {
+    opacity: 1;
+    top: 0;
+}
+#public_activity .card:hover .card-footer:after, #public_activity .card:focus .card-footer:after {
+    width: 100%;
+}

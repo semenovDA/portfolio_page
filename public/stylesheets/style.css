@@ -17,6 +17,7 @@
 @import "animation/stars.css";
 @import "animation/sunrise.css";
 @import "animation/books.css";
+@import "animation/article_card.css";
 @import "collapse.css";
 @import "gallery.css";
 @import "contact_us.css";
@@ -1197,6 +1198,7 @@ section {
   text-align: center;
   padding: 80px 0;
   position: relative;
+  margin: 0;
 }
 
 #footer::before {
@@ -1644,11 +1646,11 @@ section {
 
 .events a {
   color: #FFFFFF;
-  transition-duration: 1s;
+  transition-duration: .5s;
 }
 
 .events a:hover{
-  color: #cccccc;
+  color: #bbbbbb;
 }
 
 .events .row {

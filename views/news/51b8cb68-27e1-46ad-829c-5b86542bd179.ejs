@@ -1,0 +1,30 @@
+<%- include('../layout/header') %>
+
+<%- include('../elements/navbar') %>
+
+<main id="main">
+    <section class="m-3 news">
+        <h1 class="text-center m-0" style="text-decoration: underline">"Использование инновационных технологий в образовательном процессе ДОУ"</h1>
+        <div class="container">
+            <div class="row my-4">
+                <span>
+                    Предоставление опыта работы по технологии Александра Лобка - "Утренние сказки" в педагогической  мастерской № 1 (2) «Использование вариативных программ и совр менных образовательных технологий в ДОО: от идеи до результата»Модератор: Семенова Светлана Дымбрыловна, старший преподаватель кафедры педагогики и психологии детства ГАУ ДПО РБ «Бурятский республиканский институт образовательной политики».
+                </span>
+            </div>
+            <div class="d-flex flex-column justify-content-center w-100 h-100">
+                <div class="container">
+                    <ul class="image-gallery">
+                        <% for(let i = 20; i < 30; i++)  { %>
+                        <li style="list-style: none">
+                            <img src="images/news/IMG_<%=i%>.webp" alt="" />
+                            <div class="overlay"><span>Заголовок фотографии</span></div>
+                        </li>
+                        <% } %>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<%- include('../layout/footer') %>

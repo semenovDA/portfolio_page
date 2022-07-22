@@ -68,7 +68,7 @@
     }
 }
 
-h2 {
+#contact h2 {
     font-family: 'Arimo', sans-serif;
     color: #fff;
     font-size: clamp(30px, 6vw, 60px);
@@ -92,13 +92,13 @@ h2 {
     padding: 10px;
 }
 
-i:hover {
+#contact i:hover {
     transform: scale(1.1, 1.1);
     color: #0a53be;
     transition-duration: 1s;
 }
 
-i:active {
+#contact i:active {
     transform: scale(1.1, 1.1);
     filter:
             hue-rotate(220deg)
