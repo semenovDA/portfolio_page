@@ -18,6 +18,8 @@
 @import "animation/sunrise.css";
 @import "animation/books.css";
 @import "animation/article_card.css";
+@import "animation/mountains.css";
+@import "animation/download.css";
 @import "collapse.css";
 @import "gallery.css";
 @import "contact_us.css";
@@ -1516,6 +1518,31 @@ section {
   list-style: none;
 }
 
+#weekdays {
+  background: linear-gradient(270deg, #b3bc89, #828dc2, #88e15b);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimateBg1 20s ease infinite;
+  -moz-animation: AnimateBg1 20s ease infinite;
+  animation: AnimateBg1 20s ease infinite;
+}
+
+@-webkit-keyframes AnimateBg1 {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimateBg1 {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimateBg1 {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
 .image-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -1563,6 +1590,7 @@ section {
 .image-gallery li:hover .overlay {
   transform: scale(1);
 }
+
 
 /*
   Content
@@ -1681,4 +1709,86 @@ section {
 #publications {
   font-size: 22px;
   font-weight: 600;
+}
+
+/*
+  movement
+*/
+#movement {
+  font-size: 22px;
+  font-weight: 500;
+}
+#movement li {
+  font-size: 22px;
+  font-weight: 400;
+}
+/*
+  projects
+*/
+#projects {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+
+/*
+  art
+*/
+#art {
+  font-size: 22px;
+  font-weight: 500;
+  -webkit-animation: AnimateBg 20s ease infinite;
+  -moz-animation: AnimateBg 20s ease infinite;
+  animation: AnimateBg 20s ease infinite;
+  background: linear-gradient(270deg, #7aafa1, #50bea1, #4282d4);
+  background-size: 600% 600%;
+}
+#art li {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@-webkit-keyframes AnimateBg {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimateBg {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimateBg {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+/*
+  clay work
+*/
+
+#clay_work {
+  background: linear-gradient(270deg, #89bc91, #bd82c2, #5bc5e1);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimatedBg2 20s ease infinite;
+  -moz-animation: AnimatedBg2 20s ease infinite;
+  animation: AnimatedBg2 20s ease infinite;
+}
+
+@-webkit-keyframes AnimatedBg2 {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimatedBg2 {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimatedBg2 {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }

@@ -1,0 +1,35 @@
+<section id="my_hobbies">
+    <div class="section-title">
+        <span>Мои увлечения</span>
+        <h2>Мои увлечения</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <ul class="image-gallery" style="list-style: none">
+                <% for(let i = 1; i < 17; i++)  { %>
+                <li>
+                    <a href="images/hobbies/<%=i%>.jpg" class="glightbox4" data-gallery="gallery4">
+                        <img class="gallery-image" alt="image" src="images/hobbies/<%=i%>.jpg"/>
+                    </a>
+                </li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+
+    const lightbox1 = GLightbox({
+        selector:  '.glightbox4',
+        touchNavigation: true,
+        loop: true,
+        autoplayVideos: true,
+        onOpen: () => {
+
+        },
+        beforeSlideLoad: (slide, data) => {
+
+        }
+    });
+</script>
