@@ -1,0 +1,29 @@
+<%- include('../layout/header') %>
+
+<%- include('../elements/navbar') %>
+
+<main id="main">
+    <section class="m-3 news">
+        <h1 class="text-center m-0" style="text-decoration: underline">У нас гость ...</h1>
+        <div class="container">
+            <div class="row my-4">
+                <span>
+                    К всемирному дню гражданской обороны мы в рамках родительского проекта "У нас гость!" пригласили в гости Евгению Александровну, которая служит в МЧС. Дети не только узнали ,но и увидели много интересного: познакомились с необыкновенными видами техники службы МЧС, примерили противогаз, увидели костюм хим.защиты, с интересом рассмотрели сух.паек мчсника,узнали что они готовы в любой чрезвычайной ситуации прийти на помощь, а так же получили сладкие подарки.
+                </span>
+            </div>
+            <div class="d-flex flex-column justify-content-center w-100 h-100">
+                <div class="container">
+                    <ul class="image-gallery">
+                        <% for(let i = 1; i < 9; i++)  { %>
+                        <li style="list-style: none">
+                            <img src="images/projects/8/<%=i%>.jpg" alt="" />
+                        </li>
+                        <% } %>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<%- include('../layout/footer') %>

@@ -590,10 +590,74 @@
                 </div>
             </div>
         </div>
+        <!-- > <-->
+        <div class="section-title" style="margin-top: 80px; z-index: 1">
+            <span class="revealFadeInDown" style="color: rgba(244, 113, 116, 1)">Родителям полезное видео</span>
+        </div>
+        <div id = "parents_video" class="row d-flex justify-content-center p-3 m-0">
+            <div class="row" style="margin:100px">
+                <div class="gallery">
+                    <%
+                    let urls = [
+                        '1EIitwNzAvq7MbNU-EXBoRm3ONuAsAl_E',
+                        '11W_HvypxxtHWJcF4rfWHcd3k-FpNHsHo',
+                        '1xQzwvM74XUbKwR5fVM69DFVeOAjXhQay',
+                        '1hDQ5yzc-orIHpXzni_hzrsEWFuM51Ezp',
+                        '1CfbPC10oYdUQcvj-JdqQtYmezSbngT16',
+                        '1G7fcZeM2etohFcx0oOO5Vmv2hZgJ-3Ix',
+                        '162TcjdZ8X5yRdgGXleX5jcfYA3mmH9hH',
+                        '1mTHJnS4mCUQfjRPQffaVd-qm87D-azgr',
+                        '1GKRJIXKyXynCkU7MR9vB1Bwzlc7XIG7P',
+                        '1S-i2rWnFWKkmV2FpY59_mPaSSXaFV5F8',
+                        '1kMPQ1sC9wklSf-ZIVjU8k43hp-rjd6Sj',
+                        '1PbhIaZnIZLdp8UjLcxAGFA1fe8DpSC8p',
+                        '1YWz_zd_cUu_wdCf4h_akUN35NHQZLyr0',
+                        '1ZczchF6jt86nOGn0zf1ZkKjYQdairSAb',
+                        '1NdcRD_e57Scf2TQGhjErx1I1gbVXndc8',
+                        '1tiXfcuz9QoTRGAcG6ynvgWFCzo_FAGPm',
+                        '1Y7oqJhGjL8uOQPEV1ljqfpf5jawgSZCp',
+                        '1WGFj9bCaKgNi_x5CqVw4Pq7dFpUfRxQx',
+                        '1iDq4TEFe-hR08ZRDfV6YN9zpOzzRbOoQ',
+                        '1A9i2eX4fXbgfCIr6lL-TPKuoHAkRTUWx',
+                        '1Bf9mqQKqESqY_rddWLxymJ0epdNiiuP6',
+                        '17_j4bvY6jtN5dqpYvXlaUbHd4jvq7Qmh',
+                        '1KZqwA4FduVMxlj10whDX2AiANHBdf_Cr',
+                        '1apCZXIqYSYucW2Wvf2ay4Ba70dNaXIBq',
+                        '1rStyzWoWWd959DwkC_6wxjClQ_ZFPPay',
+                        '1lTpBXdevXUFovW6QDQCvT_TTDbs4fypv',
+                        '1IWgfXzXCy6X61urjWbjBeAYGFSbrYKGI',
+                        '1aah1DKKg-r2aX0u6zc1ajN8q0nDpdzed',
+                        '1EY5-sVH0m4Xo5-6bYtKxCnzW7aK2L0Nd'
+                    ]
+                            for(let url of urls) {
+                    %>
+                    <a href="https://drive.google.com/file/d/<%=url%>/preview" class="glightbox5" data-gallery="gallery5">
+                        <div class="gallery-item">
+                            <img style="object-fit: cover; height: 150px"
+                                 class="gallery-image" src="https://drive.google.com/thumbnail?id=<%=url%>">
+                        </div>
+                    </a>
+                    <% } %>
+                </div>
+            </div>
+        </div>
     </section>
 </main>
 
 <script>
+    const lightbox5 = GLightbox({
+        selector:  '.glightbox5',
+        touchNavigation: true,
+        loop: true,
+        autoplayVideos: true,
+        onOpen: () => {
+
+        },
+        beforeSlideLoad: (slide, data) => {
+
+        }
+    });
+
     const toggleBtns= document.querySelectorAll('.faq-toggle');
 
     toggleBtns.forEach(toggleBtn => {

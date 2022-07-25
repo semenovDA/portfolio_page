@@ -347,14 +347,26 @@ h1, h2, h3, h4, h5, h6 {
   color: #3b434a;
   text-align: center;
 }
+
 #hero h2 {
   color: #3b434a;
   margin-bottom: 50px;
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 28px;
+  font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+
+#hero div {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+#hero li {
+  font-size: 22px;
+  font-weight: 500;
+}
+
 .btn-scroll {
   transition: 0.4s;
   color: rgba(0, 0, 0, 0.6);
@@ -1467,13 +1479,14 @@ section {
   color: #FFFFFF;
 }
 
-.cards .card{
+.cards .card {
   border: 0;
   border-radius: 10px;
   background-color: #2f3dae;
   padding: 50px;
   margin: 20px;
-  max-width: 65%;
+  max-width: 100%;
+  width: 65%;
 }
 
 /*
@@ -1730,22 +1743,38 @@ section {
   font-weight: 400;
 }
 
+#projects .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+}
+
+#projects .grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+#projects .grid > article img {
+  max-width: 100%;
+}
+
+#projects .grid .text {
+  padding: 20px;
+}
+
 
 /*
   art
 */
 #art {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 500;
   -webkit-animation: AnimateBg 20s ease infinite;
   -moz-animation: AnimateBg 20s ease infinite;
   animation: AnimateBg 20s ease infinite;
   background: linear-gradient(270deg, #7aafa1, #50bea1, #4282d4);
   background-size: 600% 600%;
-}
-#art li {
-  font-size: 20px;
-  font-weight: 400;
 }
 
 @-webkit-keyframes AnimateBg {
@@ -1791,4 +1820,30 @@ section {
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}
   100%{background-position:0% 50%}
+}
+
+#youtube_channel {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+#art h3 {
+  padding: 30px;
+  margin: 30px 0;
+
+  border-radius: 10px;
+  background: #c5e8ef;
+  font-size: 36px;
+}
+
+#art li{
+  list-style-type: none;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+#art a {
+  color: #FFFFFF;
+  transition-duration: .5s;
 }

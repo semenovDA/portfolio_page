@@ -1,0 +1,29 @@
+<%- include('../layout/header') %>
+
+<%- include('../elements/navbar') %>
+
+<main id="main">
+    <section class="m-3 news">
+        <h1 class="text-center m-0" style="text-decoration: underline">Картонный Аэродром</h1>
+        <div class="container">
+            <div class="row my-4">
+                <span>
+                    Долгосрочный проект "Персональная выставка" раскрыла нам еще один талант, а мы и не догадывались о увлечениях нашего Вани. Благодаря выставки- мы его открыли. С удовольствием рассмотрели экспонаты изготовленные из бумаги в технике оригами и не только. А также узнали много нового и интересного о самолетах.
+                </span>
+            </div>
+            <div class="d-flex flex-column justify-content-center w-100 h-100">
+                <div class="container">
+                    <ul class="image-gallery">
+                        <% for(let i = 1; i < 6; i++)  { %>
+                        <li style="list-style: none">
+                            <img src="images/projects/14/<%=i%>.jpg" alt="" />
+                        </li>
+                        <% } %>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<%- include('../layout/footer') %>

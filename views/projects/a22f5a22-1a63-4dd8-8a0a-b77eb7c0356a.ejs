@@ -1,0 +1,29 @@
+<%- include('../layout/header') %>
+
+<%- include('../elements/navbar') %>
+
+<main id="main">
+    <section class="m-3 news">
+        <h1 class="text-center m-0" style="text-decoration: underline">Как живут индейцы ?</h1>
+        <div class="container">
+            <div class="row my-4">
+                <span>
+                    Дети заинтересовались жизнью племен. Проект нас полностью погрузил в жизнь индейцев, мы организовали свое племя КАЙЙ, придумали свой тотем, утренний круг перенесли на участок и проводили у священного костра. И даже во время засухи попытались вызвать дождь. Завершился проект состязаниями стрельбой из лука и конными скачками.
+                </span>
+            </div>
+            <div class="d-flex flex-column justify-content-center w-100 h-100">
+                <div class="container">
+                    <ul class="image-gallery">
+                        <% for(let i = 1; i < 9; i++)  { %>
+                        <li style="list-style: none">
+                            <img src="images/projects/7/<%=i%>.jpg" alt="" />
+                        </li>
+                        <% } %>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<%- include('../layout/footer') %>

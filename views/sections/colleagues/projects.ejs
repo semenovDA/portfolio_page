@@ -22,9 +22,134 @@
         </div>
         <div class="text-center" style="font-size: 24px; margin: 70px">
             <button  class="button button--secondary">
-                <a target="_blank" href="https://disk.yandex.ru/d/Hc7Zy0mTmmQmZA/%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B"
+                <a target="_blank" href="https://drive.google.com/drive/folders/1kCli_39dKsBnTOi1PbqZd85G85i8FZr6?usp=sharing"
                    class="button__inner">Скачать материал</a>
             </button>
+        </div>
+        <h3 class="text-center" style="text-decoration: underline; margin: 50px">
+            Вдохновитесь для своего проекта идеями моих детей
+        </h3>
+        <div>
+            <div class="container">
+                <main class="grid">
+                    <%
+                        let articles = [
+                            {
+                                title: 'Необыкновенные приключения в космосе',
+                                img: 'images/projects/1.jpg',
+                                text: 'День космонавтики нас тоже не обошел стороной...',
+                                href: '?id=2dd7ac51-16ad-46f3-9e3b-c8082368d637'
+                            },
+                            {
+                                title: 'Спасение Единорожки',
+                                img: 'images/projects/2.jpg',
+                                text: 'Сегодня, передо мной стояла одна задача ...',
+                                href: '?id=584755f8-7de2-425b-be08-86ab2140ed3e'
+                            },
+                            {
+                                title: 'Проект "Родной край"',
+                                img: 'images/projects/3.jpg',
+                                text: 'В рамках  долгосрочного проекта "Родной край" ...',
+                                href: '?id=03bfdbb3-87d6-465a-a978-e604cf8c66ff'
+                            },
+                            {
+                                title: '"Блокадный Ленинград"',
+                                img: 'images/projects/4.jpg',
+                                text: 'В рамках акции «Блокадный хлеб» передо мной ...',
+                                href: '?id=a2f6d3d9-6a63-4959-8e5f-beb5b8b0ed8f'
+                            },
+                            {
+                                title: 'У нас гость...',
+                                img: 'images/projects/5.jpg',
+                                text: '"У нас гость.." - это долгосрочный проект направленный ...',
+                                href: '?id=cbe74ccb-5686-4ed1-921b-0720bd9026e8'
+                            },
+                            {
+                                title: 'Искусственный снег !',
+                                img: 'images/projects/6.jpg',
+                                text: '...',
+                                href: '?id=7732e24a-8033-45d6-8303-1fb9caac07e0'
+                            },
+                            {
+                                title: 'Как живут индейцы ?',
+                                img: 'images/projects/7.jpg',
+                                text: 'Дети заинтересовались жизнью племен. Проект нас полностью ...',
+                                href: '?id=a22f5a22-1a63-4dd8-8a0a-b77eb7c0356a'
+                            },
+                            {
+                                title: 'У нас гость ..',
+                                img: 'images/projects/8.jpg',
+                                text: 'К всемирному дню гражданской обороны мы в рамках ...',
+                                href: '?id=3bb23779-3e12-461b-9a17-301776e08bd9'
+                            },
+                            {
+                                title: 'Проект в проекте',
+                                img: 'images/projects/9.jpg',
+                                text: 'Детская инициатива всегда приятна и неожиданна, и ...',
+                                href: '?id=b1e054c6-bf72-4c03-ba65-e7255e63af65'
+                            },
+                            {
+                                title: 'Индивидуальный проект "Любимая игрушка"',
+                                img: 'images/projects/10.jpg',
+                                text: 'У нас сегодня Даша пришла в сад  в необычном костюме ...',
+                                href: '?id=4e5bfdbd-500d-46d8-b6aa-a9e87a3d6b78'
+                            },
+                            {
+                                title: 'Проект - выставка "Обитаемый остров"',
+                                img: 'images/projects/11.jpg',
+                                text: 'Как развить познавательный интерес у ребенка? Любите эту ...',
+                                href: '?id=1818a9c2-3875-46d6-8354-7a56928c6614'
+                            },
+                            {
+                                title: 'Путешествие по планете',
+                                img: 'images/projects/12.jpg',
+                                text: 'Путешествуя по Африке, нам открылось много её тайн и загадок ...',
+                                href: '?id=809fda4a-b011-4e22-b748-510204a146e9'
+                            },
+                            {
+                                title: 'Персональная выставка',
+                                img: 'images/projects/13.jpg',
+                                text: 'Каждый ребенок талантлив и индивидуален по-своему ...',
+                                href: '?id=e8efa39d-9bef-4961-bbbd-7b05aae45f93'
+                            },
+                            {
+                                title: 'Картонный Аэродром',
+                                img: 'images/projects/14.jpg',
+                                text: 'Долгосрочный проект "Персональная выставка" раскрыла нам ...',
+                                href: '?id=eb5c67f1-7f38-4d72-8fd8-10af4f19ce8e'
+                            }
+                        ]
+                        for(let article of articles) {
+                    %>
+                        <article>
+                            <img src="<%=article.img%>">
+                            <div class="text">
+                                <h3><%=article.title%></h3>
+                                <p><%=article.text%></p>
+                                <a href="<%=article.href%>" class="btn btn-primary btn-block">Читать</a>
+                            </div>
+                        </article>
+                    <% } %>
+                </main>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 100px">
+            <div class="col">
+                <div >
+                    <h4 class="text-center m-3">Ледяной городок !</h4>
+                    <div class="d-flex justify-content-center" >
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/gyKRzsMAh6E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="text-center" style="font-size: 24px; margin: 70px">
+                    <button  class="button button--secondary">
+                        <a target="_blank" href="https://drive.google.com/drive/folders/1dnbqjzurJ0Ykewk_z-Fhi5LLCGSJ1flf"
+                           class="button__inner">Скачать материал</a>
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 </section>

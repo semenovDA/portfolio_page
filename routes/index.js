@@ -35,7 +35,13 @@ router.get('/contact_us', function(req, res, next) {
 
 /* GET home page. */
 router.get('/colleagues', function(req, res, next) {
+  if('id' in req.query) return next();
   res.render('pages/colleagues');
+});
+
+/* GET home page. */
+router.get('/colleagues', function(req, res, next) {
+  res.render('projects/' +  req.query.id);
 });
 
 module.exports = router;

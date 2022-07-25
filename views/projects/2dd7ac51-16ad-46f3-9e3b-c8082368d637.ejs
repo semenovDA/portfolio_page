@@ -1,0 +1,29 @@
+<%- include('../layout/header') %>
+
+<%- include('../elements/navbar') %>
+
+<main id="main">
+    <section class="m-3 news">
+        <h1 class="text-center m-0" style="text-decoration: underline">Необыкновенные приключения в космосе</h1>
+        <div class="container">
+            <div class="row my-4">
+                <span>
+                    День космонавтики нас тоже не обошел стороной. Сначала мы на базе нашей группы развернули «Фиксидром»- за 2 дня было построено и подготовлено к полету две ракеты. Одну мы строили строго по инструкции корабля «Восток 1», вторую изобрели сами.  Внутри ракет была создана атмосфера уюта и тепла (развесили картины и взяли самую нужную вещь по славам детей микроволновку). Ракеты к старту готовы, летим. За время полета посетили 3 обитаемые планеты, планета Земля оказалась самой гостеприимной. На следующий год решили исследовать черную дыру…….. А может и раньше!
+                </span>
+            </div>
+            <div class="d-flex flex-column justify-content-center w-100 h-100">
+                <div class="container">
+                    <ul class="image-gallery">
+                        <% for(let i = 1; i < 5; i++)  { %>
+                        <li style="list-style: none">
+                            <img src="images/projects/1/<%=i%>.jpg" alt="" />
+                        </li>
+                        <% } %>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<%- include('../layout/footer') %>
