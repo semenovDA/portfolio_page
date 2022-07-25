@@ -4,8 +4,114 @@
             <span>Сказочные метафоры</span>
             <h2>Сказочные метафоры</h2>
         </div>
+        <div class="mb-4">
+            Сказка расширяет и оживляет процесс познания. Через сказку легче объяснить малышу что такое «хорошо»
+            и что такое ... Сказка — это способ общения с малышом на понятном и доступном ему языке
+        </div>
+        <!-- -->
+        <div>
+            <div>
+                <div class="row title text-center" style="left: -10px;">
+                    <h2>Ребенок - режиссер</h2>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 15%">
+            Технология "Утренние сказки" дает мои детям возможность стать режиссером своей собственной сказки, они еще не понимают этого слова в полном объеме, но важно говорят - я сегодня главный.
+            <br><br>
+            Стать режиссером может стать каждый ребенок, который напишет интересную с элементами новизны сказку. Ребенок- режиссер сам назначает  героев ( дет могут играть как одушевленные так и неодушевленные предметы, как например дерево, магазин  или беспорядок), объясняет им как и что они должны делать и говорить, выбирает декорации, если нужно под его руководством мы изготавливаем аксессуары и маски для постановки. И так звучит музыка, режиссер читает свою сказку ( может поручить делать это кому то другому), представление началось.
+            <br><br>
+            По желанию проигрываем сказку 2 раза со сменой героя.
+            <br><br>
+            Режиссер, актеры и зрители в полном восторге, а значит завтра будет новая сказка.
+        </div>
+        <div class="p-5">
+            <ul class="image-gallery" style="list-style: none">
+                <% for(let i = 1; i < 5; i++)  { %>
+                <li>
+                    <a href="images/metaphors/<%=i%>.png" class="glightbox10" data-gallery="glightbox10">
+                        <img class="gallery-image" alt="image" src="images/metaphors/<%=i%>.png"/>
+                    </a>
+                </li>
+                <% } %>
+            </ul>
+        </div>
+        <!-- -->
+        <div>
+            <div>
+                <div class="row title text-center" style="right: -20px;">
+                    <h2>Мюзикл "Мама для мамонтенка"</h2>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 10%">
+            Мои малыши решили удивительно оригинально поздравить мам с праздником "День матери". Мы подготовили мюзикл по сказке "Мама для мамонтенка". Для этого мы много репетировали, вживались в роли, учились петь и танцевать, а группу превратили в настоящий театр.
+            <br><br>
+            После премьеры мюзикла, мы почувствовали себя настоящими звездами.
+        </div>
+        <div class="p-5">
+            <ul class="image-gallery" style="list-style: none">
+                <% for(let i = 5; i < 9; i++)  { %>
+                <li>
+                    <a href="images/metaphors/<%=i%>.png" class="glightbox11" data-gallery="glightbox11">
+                        <img class="gallery-image" alt="image" src="images/metaphors/<%=i%>.png"/>
+                    </a>
+                </li>
+                <% } %>
+            </ul>
+        </div>
+        <!-- -->
+        <div>
+            <div>
+                <div class="row title text-center" style="left: -10px;">
+                    <h2>Моя технология по сказке</h2>
+                </div>
+            </div>
+        </div>
 
+        <div class="p-5 d-flex justify-content-center" style="margin-top: 10%">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/t_iS-2Nng4E" title="YouTube video player"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="text-center" style="font-size: 24px; margin: 70px">
+            <button  class="button button--secondary">
+                <a target="_blank" href="https://drive.google.com/drive/folders/14zT9vziF693skvPA0JkhGqrrPVNtyyns"
+                   class="button__inner">Скачать материал</a>
+            </button>
+        </div>
     </div>
 </section>
 
 
+<script type="text/javascript">
+
+    const lightbox10 = GLightbox({
+        selector:  '.glightbox10',
+        touchNavigation: true,
+        loop: true,
+        autoplayVideos: true,
+        onOpen: () => {
+
+        },
+        beforeSlideLoad: (slide, data) => {
+
+        }
+    });
+
+    const lightbox11 = GLightbox({
+        selector:  '.glightbox11',
+        touchNavigation: true,
+        loop: true,
+        autoplayVideos: true,
+        onOpen: () => {
+
+        },
+        beforeSlideLoad: (slide, data) => {
+
+        }
+    });
+
+</script>

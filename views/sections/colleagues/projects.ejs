@@ -26,9 +26,10 @@
                    class="button__inner">Скачать материал</a>
             </button>
         </div>
-        <h3 class="text-center" style="text-decoration: underline; margin: 50px">
-            Вдохновитесь для своего проекта идеями моих детей
-        </h3>
+        <div id="inspire" class="section-title">
+            <span>Вдохновитесь идеями моих детей</span>
+            <h2>Вдохновитесь для своего проекта идеями моих детей</h2>
+        </div>
         <div>
             <div class="container">
                 <main class="grid">
@@ -133,7 +134,7 @@
                 </main>
             </div>
         </div>
-        <div class="row" style="margin-top: 100px">
+        <div class="row" style="margin: 100px 0">
             <div class="col">
                 <div >
                     <h4 class="text-center m-3">Ледяной городок !</h4>
@@ -151,7 +152,48 @@
                 </div>
             </div>
         </div>
+
+        <div id='useful_info' class="section-title">
+            <span>Полезная информация</span>
+            <h2>Полезная информация вам в помощь</h2>
+        </div>
+        <div style="margin-bottom: 50px">
+            <a target="_blank" href="https://deti-club.ru/doshkolnoe-obrazovanie-unikalnaya-proektnaya-deyatelnost-v-detskikh-sadakh-reggio-emilia">
+                Уникальная проектная деятельность в детских садах Реджо-Эмилия. Дети сами определяют программу развития
+            </a>
+        </div>
+        <div class="gallery">
+            <%
+            let urls = [
+                'm2-17fqg1aY',
+                'hcYI-t0gkUU',
+                'fDy5atG48Ik',
+                'ugXSJZKHceo'
+            ]
+                    for(let url of urls) {
+            %>
+            <a href="https://youtu.be/<%=url%>" class="glightbox8" data-gallery="gallery8">
+                <div class="gallery-item ">
+                    <img class="gallery-image" src="https://img.youtube.com/vi/<%=url%>/hqdefault.jpg">
+                </div>
+            </a>
+            <% } %>
+        </div>
     </div>
 </section>
 
+<script type="text/javascript">
 
+    const lightbox8 = GLightbox({
+        selector:  '.glightbox8',
+        touchNavigation: true,
+        loop: true,
+        autoplayVideos: true,
+        onOpen: () => {
+
+        },
+        beforeSlideLoad: (slide, data) => {
+
+        }
+    });
+</script>

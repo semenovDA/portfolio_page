@@ -44,4 +44,9 @@ router.get('/colleagues', function(req, res, next) {
   res.render('projects/' +  req.query.id);
 });
 
+/* GET home page. */
+router.get('/my_experience', function(req, res, next) {
+  res.render('pages/my_experience');
+});
+
 module.exports = router;

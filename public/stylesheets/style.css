@@ -127,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
   padding: 0;
@@ -222,7 +222,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
   color: #fff;
@@ -1846,4 +1846,53 @@ section {
 #art a {
   color: #FFFFFF;
   transition-duration: .5s;
+}
+
+#const {
+  background: linear-gradient(270deg, #a2e57a, #7a8ce5, #c17ae5);
+  background-size: 600% 600%;
+  font-size: 24px;
+  font-weight: 500;
+  -webkit-animation: AnimatedBg3 30s ease infinite;
+  -moz-animation: AnimatedBg3 30s ease infinite;
+  animation: AnimatedBg3 30s ease infinite;
+}
+
+@-webkit-keyframes AnimatedBg3 {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimatedBg3 {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimatedBg3 {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+#const .title {
+  position: absolute;
+  background: #c5e8ef;
+  width: 50%;
+  height: 80px;
+  align-content: center;
+  border-radius: 10px;
+}
+
+#metaphors .title {
+  position: absolute;
+  background: #c5e8ef;
+  width: 50%;
+  height: 80px;
+  align-content: center;
+  border-radius: 10px;
+}
+
+#metaphors {
+  font-size: 26px;
+  font-weight: 500;
 }

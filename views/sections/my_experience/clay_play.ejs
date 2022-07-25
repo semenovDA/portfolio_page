@@ -1,4 +1,4 @@
-<section id="clay_work" class="clay_work position-relative">
+<section id="clay_play" class="clay_play">
     <div class="mx-2">
         <img style="width: 13%; height: auto; position: absolute" src="images/gif/caly/1.gif">
         <img style="width: 15%; height: auto; position: absolute; right: 10px" src="images/gif/caly/2.gif">
@@ -7,30 +7,19 @@
             <h2>Работа с глиной</h2>
         </div>
 
-        <div class="row" style="margin:100px">
+        <div class="row" style="margin: 0 150px">
             <div class="gallery">
                 <%
                 let urls = [
-                    'F1TXZNviPRs',
-                    'ecu-4ajlr9g',
-                    '0NKeThuWZqM',
-                    'TG6qXvJwJDY',
-                    'KBc___VevT0',
-                    'Qk05BHkmJhA',
-                    'AyckciYOWMA',
-                    'sSV55Dc7GD0',
-                    'DyGipKZYEPI',
-                    'vwoPb5jrD-c',
-                    'wGl0pzZHkLw',
-                    'R6rFhFllmkk'
+                    'RrtTpJrapE4'
                 ]
-                for(let url of urls) {
+                        for(let url of urls) {
                 %>
-                    <a href="https://youtu.be/<%=url%>" class="glightbox1" data-gallery="gallery3">
-                        <div class="gallery-item ">
-                            <img class="gallery-image" src="https://img.youtube.com/vi/<%=url%>/hqdefault.jpg">
-                        </div>
-                    </a>
+                <a href="https://youtu.be/<%=url%>" class="glightbox12" data-gallery="gallery12">
+                    <div class="gallery-item ">
+                        <img class="gallery-image" src="https://img.youtube.com/vi/<%=url%>/hqdefault.jpg">
+                    </div>
+                </a>
                 <% } %>
             </div>
         </div>
@@ -41,8 +30,8 @@
 
 <script type="text/javascript">
 
-    const lightbox1 = GLightbox({
-        selector:  '.glightbox1',
+    const lightbox12 = GLightbox({
+        selector:  '.glightbox12',
         touchNavigation: true,
         loop: true,
         autoplayVideos: true,
