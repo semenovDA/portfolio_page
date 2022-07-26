@@ -1,0 +1,155 @@
+<section id="project_activity" class="project_activity">
+    <div class="mx-2">
+        <div class="section-title">
+            <span>Проектная деятельность</span>
+            <h2>Проектная деятельность</h2>
+        </div>
+    </div>
+    <div>
+        <div class="d-flex justify-content-center">
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQQiVHCBjK9qdrHHmMbRCyZeU_BUV23CjautlsYaU-svTN2dKMNvCo_J8CzER7xbQ/embed?start=true&loop=true&delayms=2000"
+                    frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+            </iframe>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="grid-row">
+                    <%
+                        let projects = [
+                            {
+                                title: 'Картонный Аэродром',
+                                href: '?id=eb5c67f1-7f38-4d72-8fd8-10af4f19ce8e',
+                                img: 'images/projects/14.jpg'
+                            },
+                            {
+                                title: 'Персональная выставка',
+                                href: '?id=e8efa39d-9bef-4961-bbbd-7b05aae45f93',
+                                img: 'images/projects/13.jpg'
+                            },
+                            {
+                                title: '"Обитаемый остров"',
+                                href: '?id=1818a9c2-3875-46d6-8354-7a56928c6614',
+                                img: 'images/projects/11.jpg'
+                            },
+                            {
+                                title: 'У нас гость ...',
+                                href: '?id=3bb23779-3e12-461b-9a17-301776e08bd9',
+                                img: 'images/projects/8.jpg'
+                            },
+                            {
+                                title: '"Любимая игрушка"',
+                                href: '?id=4e5bfdbd-500d-46d8-b6aa-a9e87a3d6b78',
+                                img: 'images/projects/10.jpg'
+                            },
+                            {
+                                title: 'Проект в проекте',
+                                href: '?id=b1e054c6-bf72-4c03-ba65-e7255e63af65',
+                                img: 'images/projects/9.jpg'
+                            },
+                            {
+                                title: 'Как живут индейцы ?',
+                                href: '?id=a22f5a22-1a63-4dd8-8a0a-b77eb7c0356a',
+                                img: 'images/projects/7.jpg'
+                            },
+                            {
+                                title: 'Искусственный снег !',
+                                href: '?id=7732e24a-8033-45d6-8303-1fb9caac07e0',
+                                img: 'images/projects/6.jpg'
+                            },
+                            {
+                                title: 'У нас гость ...',
+                                href: '?id=cbe74ccb-5686-4ed1-921b-0720bd9026e8',
+                                img: 'images/projects/5.jpg'
+                            },
+                            {
+                                title: '"Мама для мамонтенка"',
+                                href: '?id=c9fdde0b-d16b-405b-931a-10b84965f291.ejs',
+                                img: 'images/metaphors/5.png'
+                            },
+                            {
+                                title: '"Спасение Единорожки"',
+                                href: '?id=584755f8-7de2-425b-be08-86ab2140ed3e',
+                                img: 'images/projects/2.jpg'
+                            },
+                            {
+                                title: '"Едем на море"',
+                                href: '?id=aeb5512e-4b36-45f0-8fb7-6a1bb3dee3cf',
+                                img: 'images/projects/15.jpg'
+                            },
+                            {
+                                title: '"Зубной день"',
+                                href: '?id=d7d9a5ba-8cef-4868-a440-fe324cf8d7b3',
+                                img: 'images/projects/16.jpg'
+                            },
+                            {
+                                title: '"День наоборот"',
+                                href: '?id=e47d202e-a385-477d-9af5-d273776312cd',
+                                img: 'images/projects/17.jpg'
+                            },
+                            {
+                                title: 'Твистинг',
+                                href: '?id=bb331c5f-8c36-4eab-b626-6ddcb2341cae',
+                                img: 'images/projects/18.jpg'
+                            },
+                            {
+                                title: 'Жизнь картонной коробки',
+                                href: '?id=d391e0fc-9875-4f2f-8416-5b8c045228ca',
+                                img: 'images/projects/19.jpg'
+                            },
+                            {
+                                title: 'Придумали САМИ !',
+                                href: '?id=0a7e0a82-4d8d-4ccb-92d3-62f70042af7f',
+                                img: 'images/projects/20.jpg'
+                            },
+                            {
+                                title: '"Блокадный Ленинград"',
+                                href: '?id=a2f6d3d9-6a63-4959-8e5f-beb5b8b0ed8f',
+                                img: 'images/projects/4.jpg'
+                            },
+                            {
+                                title: '"Родной край"',
+                                href: '?id=03bfdbb3-87d6-465a-a978-e604cf8c66ff',
+                                img: 'images/projects/3.jpg'
+                            },
+                            {
+                                title: 'Дружба это ...',
+                                href: '?id=a84e3968-db2e-4289-a59d-7a1057734cdb',
+                                img: 'images/projects/21.jpg'
+                            },
+                            {
+                                title: '"Солнечные лучики"',
+                                href: '?id=ab9f9923-fe73-4b85-b24a-0216f301fe4c',
+                                img: 'https://via.placeholder.com/150'
+                            },
+                            {
+                                title: '"Что такое доброта"',
+                                href: '?id=71d1f3d2-0194-4d7d-abbf-d1ad84359bc7',
+                                img: 'https://via.placeholder.com/150'
+                            },
+                            {
+                                title: '"Зимний лес"',
+                                href: '?id=b82e30ab-3d71-4c5f-841c-e6971ee98276.ejs',
+                                img: 'https://via.placeholder.com/150'
+                            }
+                        ]
+                        for(let project of projects) {
+                    %>
+                    <div class="grid-item">
+                        <a style="color: black" href="<%=project.href%>">
+                            <span>
+                                <h3><%=project.title%></h3>
+                            </span>
+                            <img height="300px" width="300px" class="clip-circle" src=<%=project.img%>>
+                        </a>
+                    </div>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+
+            </div>
+        </div>
+    </div>
+</section>

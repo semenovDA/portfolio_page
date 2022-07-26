@@ -1813,3 +1813,53 @@ section {
   height: 100%;
   z-index: 1;
 }
+
+.clip-circle {
+  clip-path: circle(35% at 50% 50%);
+}
+
+#project_activity .section {
+  padding: 70px 30px;
+}
+
+#project_activity .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+#project_activity .grid-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 350px));
+  grid-gap: 20px 20px;
+  justify-content: center;
+  align-items: baseline;
+}
+
+#project_activity .grid-row .grid-item span {
+  line-height: 1;
+}
+
+#project_activity .grid-row .grid-item h3 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+#project_activity .grid-row .grid-item:hover {
+  filter: contrast(0.7);
+}
+
+#project_activity .grid-row .grid-item {
+  transition: filter 0.5s ease;
+  display: flex;
+  cursor: pointer;
+  background: var(--light);
+  box-shadow: var(--shadow);
+  color: var(--dark);
+  text-align: center;
+  font-family: sans-serif;
+  flex-direction: column-reverse;
+  align-items: stretch;
+  background: #c5e8ef;
+  border-radius: 10px;
+  padding: 10px;
+}

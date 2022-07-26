@@ -1,0 +1,42 @@
+<section id="morning_tales" class="morning_tales">
+    <div class="mx-2">
+
+        <div class="section-title">
+            <span>Утренние сказки</span>
+            <h2>Утренние сказки</h2>
+        </div>
+
+        <div class="row" style="margin: 0 150px">
+            <div class="gallery">
+                <%
+                let urls = [
+                    't_iS-2Nng4E'
+                ]
+                        for(let url of urls) {
+                %>
+                <a href="https://youtu.be/<%=url%>" class="glightbox13" data-gallery="gallery13">
+                    <div class="gallery-item ">
+                        <img class="gallery-image" src="https://img.youtube.com/vi/<%=url%>/hqdefault.jpg">
+                    </div>
+                </a>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+
+    const lightbox13 = GLightbox({
+        selector:  '.glightbox13',
+        touchNavigation: true,
+        loop: true,
+        autoplayVideos: true,
+        onOpen: () => {
+
+        },
+        beforeSlideLoad: (slide, data) => {
+
+        }
+    });
+</script>

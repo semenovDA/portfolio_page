@@ -46,7 +46,12 @@ router.get('/colleagues', function(req, res, next) {
 
 /* GET home page. */
 router.get('/my_experience', function(req, res, next) {
+  if('id' in req.query) return next();
   res.render('pages/my_experience');
+});
+/* GET home page. */
+router.get('/my_experience', function(req, res, next) {
+  res.render('projects/' +  req.query.id);
 });
 
 module.exports = router;
