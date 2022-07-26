@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{@srexi/purecounterjs, animate.css, boxicons, glightbox, gsap, jquery-3.5.1.slim, lightbox2, particlesjs, swiper, typed.js}" />
+    <file url="PROJECT" libraries="{@srexi/purecounterjs, animate.css, aos, boxicons, glightbox, gsap, jquery-3.5.1.slim, jquery.lazy, jquery.lazy.plugins, lightbox2, particlesjs, swiper, typed.js}" />
     <includedPredefinedLibrary name="Node.js Core" />
   </component>
 </project>

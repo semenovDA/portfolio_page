@@ -32,7 +32,32 @@
 
 <!-- Template Main JS File -->
 <script src="javascripts/main.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
+
+<script> AOS.init(); </script>
+<script>
+  function ReLoadImages(){
+    $('img[data-lazysrc]').each( function(){
+              //* set the img src from data-src
+              $( this ).attr( 'src', $( this ).attr( 'data-lazysrc' ) );
+            }
+    );
+  }
+
+  document.addEventListener('readystatechange', event => {
+    if (event.target.readyState === "interactive") {  //or at "complete" if you want it to execute in the most last state of window.
+      ReLoadImages();
+    }
+  });
+
+  $(function() {
+    $('.lazy').lazy();
+  });
+
+</script>
 </body>
 
 </html>

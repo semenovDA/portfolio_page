@@ -18,5 +18,8 @@
     <orderEntry type="library" name="@srexi/purecounterjs" level="application" />
     <orderEntry type="library" name="jquery-3.5.1.slim" level="application" />
     <orderEntry type="library" name="gsap" level="application" />
+    <orderEntry type="library" name="aos" level="application" />
+    <orderEntry type="library" name="jquery.lazy" level="application" />
+    <orderEntry type="library" name="jquery.lazy.plugins" level="application" />
   </component>
 </module>
