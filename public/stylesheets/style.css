@@ -1307,63 +1307,10 @@ section {
   grid-row-end: 15;
 }
 
-/*
-  experience gallery
-*/
-
-.experience_gallery {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(8, 10vw);
-  grid-gap: 15px;
-}
-
 .gallery__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.gallery__item--1 {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 6;
-}
-
-.gallery__item--2 {
-  grid-column-start: 4;
-  grid-column-end: 7;
-  grid-row-start: 1;
-  grid-row-end: 6;
-}
-
-.gallery__item--3 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 6;
-  grid-row-end: 8;
-}
-
-.gallery__item--4 {
-  grid-column-start: 3;
-  grid-column-end: 7;
-  grid-row-start: 6;
-  grid-row-end: 9;
-}
-
-.gallery__item--5 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 8;
-  grid-row-end: 11;
-}
-
-.gallery__item--6 {
-  grid-column-start: 3;
-  grid-column-end: 7;
-  grid-row-start: 9;
-  grid-row-end: 11;
 }
 
 /*
@@ -1706,31 +1653,6 @@ section {
   clay work
 */
 
-#clay_work {
-  background: linear-gradient(270deg, #89bc91, #bd82c2, #5bc5e1);
-  background-size: 600% 600%;
-
-  -webkit-animation: AnimatedBg2 20s ease infinite;
-  -moz-animation: AnimatedBg2 20s ease infinite;
-  animation: AnimatedBg2 20s ease infinite;
-}
-
-@-webkit-keyframes AnimatedBg2 {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-@-moz-keyframes AnimatedBg2 {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-@keyframes AnimatedBg2 {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-
 #youtube_channel {
   font-size: 24px;
   font-weight: 500;
@@ -1862,4 +1784,74 @@ section {
   background: #c5e8ef;
   border-radius: 10px;
   padding: 10px;
+}
+
+#project_activity .section {
+  padding: 70px 30px;
+}
+
+#project_activity .container, #ytb_together .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+#project_activity .grid-row, #ytb_together .grid-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 350px));
+  grid-gap: 20px 20px;
+  justify-content: center;
+  align-items: baseline;
+}
+
+#project_activity .grid-row .grid-item span, #ytb_together .grid-row .grid-item span {
+  line-height: 1;
+}
+
+#project_activity .grid-row .grid-item h3, #ytb_together .grid-row .grid-item h3 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+#project_activity .grid-row .grid-item:hover, #ytb_together .grid-row .grid-item:hover {
+  filter: contrast(0.7);
+}
+
+#project_activity .grid-row .grid-ite, #ytb_together .grid-row .grid-item {
+  transition: filter 0.5s ease;
+  display: flex;
+  cursor: pointer;
+  background: var(--light);
+  box-shadow: var(--shadow);
+  color: var(--dark);
+  text-align: center;
+  font-family: sans-serif;
+  flex-direction: column-reverse;
+  align-items: stretch;
+  background: #c5e8ef;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
+@-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+
+.pulse-button {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border: none;
+  box-shadow: 0 0 0 0 rgba(66, 135, 245, .7);
+  border-radius: 50%;
+  background-color: #285feb;
+  background-image: url(https://static.tildacdn.com/tild3830-6134-4537-b439-333034366337/phone_call.svg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
 }
