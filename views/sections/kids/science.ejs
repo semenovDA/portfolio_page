@@ -1,0 +1,68 @@
+<section id="science" class="px-5 m-0">
+    <div data-aos="fade-down" class="section-title">
+        <span>Научный центр</span>
+        <h2>Научный центр</h2>
+    </div>
+    <div>
+        <div class="row">
+            <div data-aos="fade-right" class="col title-section text-center">
+                <h2>Опыты с солью</h2>
+                <a class="btn" onclick="galleries2[0].open()">
+                    <img class="animate" src="images/science/1.png">
+                </a>
+            </div>
+            <div data-aos="fade-left" class="col title-section text-center">
+                <h2>Фокусы</h2>
+                <a class="btn" onclick="galleries2[1].open()">
+                    <img class="animate" src="images/science/2.png">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div data-aos="fade-right" class="col title-section text-center">
+                <h2>Живая радуга</h2>
+                <a class="btn" onclick="galleries2[2].open()">
+                    <img class="animate" src="images/science/3.png">
+                </a>
+            </div>
+            <div data-aos="fade-left" class="col title-section text-center">
+                <h2>Опыт с водой</h2>
+                <a class="btn" onclick="galleries2[3].open()">
+                    <img class="animate" src="images/science/4.png">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div data-aos="fade-up" class="col title-section text-center">
+                <h2>Магниты</h2>
+                <a class="btn" onclick="galleries2[4].open()">
+                    <img class="animate" src="images/science/5.png">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    urls = [
+        'ScD0ft8H2hA',
+        'Edq3w4LteGY',
+        'MJzoAnE7kcg',
+        'v-uv5tt0ME4',
+        'zYWig8xASos',
+    ]
+    let galleries2 = []
+    for(let url of urls) {
+        galleries2.push(GLightbox({
+            elements: [
+                {
+                    'href': 'https://www.youtube.com/watch?v=' + url,
+                    'type': 'video',
+                    'source': 'youtube', //vimeo, youtube or local
+                    'width': 900,
+                }
+            ],
+            autoplayVideos: true,
+        }))
+    }
+</script>

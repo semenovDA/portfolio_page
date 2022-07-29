@@ -1,0 +1,68 @@
+<section id="training" class="px-5 m-0">
+    <div data-aos="fade-down" class="section-title">
+        <span>Спортивный зал</span>
+        <h2>Спортивный зал</h2>
+    </div>
+    <div>
+        <div class="row">
+            <div data-aos="fade-right" class="col title-section text-center">
+                <h2 class="title">Жужжалка</h2>
+                <a class="btn" onclick="galleries1[0].open()">
+                    <img class="animate" src="images/training/1.png">
+                </a>
+            </div>
+            <div data-aos="fade-left" class="col title-section text-center">
+                <h2 class="title">Зарядка-загадка</h2>
+                <a class="btn" onclick="galleries1[1].open()">
+                    <img class="animate" src="images/training/2.png">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div data-aos="fade-up" class="col title-section text-center">
+                <h2 class="title">Танцуют все</h2>
+                <a class="btn" onclick="galleries1[2].open()">
+                    <img class="animate" src="images/training/3.png">
+                </a>
+            </div>
+            <div data-aos="fade-up" class="col title-section text-center">
+                <h2 class="title">Повтори</h2>
+                <a class="btn" onclick="galleries1[3].open()">
+                    <img class="animate" src="images/training/4.png">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div data-aos="fade-up" class="col title-section text-center">
+                <h2 class="title">Сина и Ло</h2>
+                <a class="btn" onclick="galleries1[4].open()">
+                    <img class="animate" src="images/training/5.png">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    urls = [
+        'ASSlfCTQlOQ',
+        'UebJRn0t11w',
+        'qSs3oubvqUo',
+        'yRPgXNqz4hI',
+        'vre4MVRIq4k',
+    ]
+    let galleries1 = []
+    for(let url of urls) {
+        galleries1.push(GLightbox({
+            elements: [
+                {
+                    'href': 'https://www.youtube.com/watch?v=' + url,
+                    'type': 'video',
+                    'source': 'youtube', //vimeo, youtube or local
+                    'width': 900,
+                }
+            ],
+            autoplayVideos: true,
+        }))
+    }
+</script>

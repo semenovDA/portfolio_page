@@ -1,0 +1,74 @@
+<section id="videos" class="px-5 m-0">
+    <div data-aos="fade-down" class="section-title">
+        <span>Мультфильмы</span>
+        <h2>Мультфильмы</h2>
+    </div>
+    <div>
+        <div class="row">
+            <div data-aos="fade-right" class="col">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/y3pM2KXyqw4"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <div data-aos="fade-left" class="col">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/WkcoM-c5lMQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <div class="row p-4">
+            <div data-aos="fade-down" class="col d-flex justify-content-center">
+                <h1 class="text-center w-75">
+                    Иногда смотреть телевизор может быть очень полезно, ведь в некоторых
+                    фильмах и мультиках можно найти важные смыслы.
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div data-aos="fade-right" class="col title-section text-center">
+                <h2>Котики, вперед !</h2>
+                <a class="btn" onclick="galleries[0].open()">
+                    <img class="animate" src="images/videos/1.webp">
+                </a>
+            </div>
+            <div data-aos="fade-left" class="col title-section text-center">
+                <h2>Летающие звери</h2>
+                <a class="btn" onclick="galleries[1].open()">
+                    <img class="animate" src="images/videos/2.webp">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div data-aos="fade-up" class="col title-section text-center">
+                <h2>Монсики</h2>
+                <a class="btn" onclick="galleries[2].open()">
+                    <img class="animate" src="images/videos/3.webp">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    let urls = [
+        'lPPvCTvw15M',
+        'KX82yi4F-lg',
+        'Kn5QmcTTCFM',
+    ]
+    let galleries = []
+    for(let url of urls) {
+        galleries.push(GLightbox({
+            elements: [
+                {
+                    'href': 'https://www.youtube.com/watch?v=' + url,
+                    'type': 'video',
+                    'source': 'youtube', //vimeo, youtube or local
+                    'width': 900,
+                }
+            ],
+            autoplayVideos: true,
+        }))
+    }
+</script>

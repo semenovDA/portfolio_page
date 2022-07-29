@@ -1684,37 +1684,12 @@ section {
   background-size: 600% 600%;
   font-size: 24px;
   font-weight: 500;
-  -webkit-animation: AnimatedBg3 30s ease infinite;
-  -moz-animation: AnimatedBg3 30s ease infinite;
-  animation: AnimatedBg3 30s ease infinite;
+  -webkit-animation: AnimatedBg 30s ease infinite;
+  -moz-animation: AnimatedBg 30s ease infinite;
+  animation: AnimatedBg 30s ease infinite;
 }
 
-@-webkit-keyframes AnimatedBg3 {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-@-moz-keyframes AnimatedBg3 {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-@keyframes AnimatedBg3 {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-
-#const .title {
-  position: absolute;
-  background: #c5e8ef;
-  width: 50%;
-  height: 80px;
-  align-content: center;
-  border-radius: 10px;
-}
-
-#metaphors .title {
+#const .title, #metaphors .title {
   position: absolute;
   background: #c5e8ef;
   width: 50%;
@@ -1854,4 +1829,101 @@ section {
   -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
   -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
   animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+
+#videos .animate {
+  animation: scale 2000ms linear infinite;
+}
+
+#training .animate {
+  animation: scale 2000ms linear infinite;
+  width: 200px;
+}
+
+#science .animate {
+  animation: scale 2000ms linear infinite;
+  width: 200px;
+}
+
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+#videos .title-section {
+  padding: 50px;
+  margin: 30px;
+  background: #0a53be;
+  width: 50%;
+  border-radius: 10px;
+  color: white;
+}
+
+#training .title-section {
+  padding: 50px;
+  margin: 30px;
+  background: #4c988e;
+  width: 50%;
+  border-radius: 10px;
+  color: white;
+}
+
+#science .title-section {
+  padding: 50px;
+  margin: 30px;
+  background: #7ac1e4;
+  width: 50%;
+  border-radius: 10px;
+  color: white;
+}
+
+#games .game {
+  border: 0;
+  width: 100%;
+  height: 500px
+}
+
+#videos {
+  background: linear-gradient(270deg, #dc7dc9, #6089e5, #847ae3);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimatedBg 20s ease infinite;
+  -moz-animation: AnimatedBg 20s ease infinite;
+  animation: AnimatedBg 20s ease infinite;
+}
+
+#training {
+  background: linear-gradient(270deg, #779fde, #83d170, #b892cf);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimatedBg 20s ease infinite;
+  -moz-animation: AnimatedBg 20s ease infinite;
+  animation: AnimatedBg 20s ease infinite;
+}
+
+@-webkit-keyframes AnimatedBg {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimatedBg {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimatedBg {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }

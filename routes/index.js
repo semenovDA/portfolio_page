@@ -54,4 +54,9 @@ router.get('/my_experience', function(req, res, next) {
   res.render('projects/' +  req.query.id);
 });
 
+/* GET home page. */
+router.get('/kids', function(req, res, next) {
+  res.render('pages/kids');
+});
+
 module.exports = router;
