@@ -101,6 +101,11 @@ h1, h2, h3, h4, h5, h6 {
 #header.header-scrolled nav ul li a {
   color: white;
 }
+@media (max-width: 575px) {
+  #header.header-scrolled nav ul li a {
+    color: black;
+  }
+}
 
 #header.header-scrolled nav ul li.dropdown ul li a {
   color: black;
@@ -223,6 +228,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
+    color: black;
   }
 
   .navbar ul {
@@ -379,6 +385,13 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     margin-bottom: 30px;
   }
+  #hero {
+    width: 100%;
+    height: 150vh;
+    background: url("../images/hero-bg.jpg") top right;
+    background-size: cover;
+    position: relative;
+  }
 }
 
 @-webkit-keyframes up-down {
@@ -443,6 +456,11 @@ section {
   position: relative;
   z-index: 2;
 }
+
+.video-gallery {
+  margin: 0 150px;
+}
+
 @media (max-width: 575px) {
   .section-title h2 {
     font-size: 28px;
@@ -450,6 +468,14 @@ section {
   }
   .section-title span {
     font-size: 38px;
+    line-height: 1;
+  }
+  .video-gallery {
+    margin: 0;
+  }
+
+  .mobile-hidden {
+    display: none;
   }
 }
 
@@ -1237,6 +1263,22 @@ section {
   font-weight: 800;
 }
 
+@media (max-width: 575px) {
+  .family_gallery .block {
+    background: #0d6efd;
+    color: #FFFFFF;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 0;
+  }
+
+  .family_gallery h2 {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 800;
+  }
+}
+
 .family_gallery .gallery__item--1 {
   grid-column-start: 1;
   grid-column-end: 4;
@@ -1344,7 +1386,29 @@ section {
   max-width: 100%;
   width: 65%;
 }
+@media (max-width: 575px) {
+  .cards h1{
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+  }
 
+  .cards p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+  }
+
+  .cards .card {
+    border: 0;
+    border-radius: 10px;
+    background-color: #2f3dae;
+    padding: 50px;
+    margin: 20px;
+    max-width: 100%;
+    width: 85%;
+  }
+}
 /*
   Kids gallery section
 */
@@ -1654,9 +1718,19 @@ section {
 */
 
 #youtube_channel {
+  margin: 20px 80px;
   font-size: 24px;
   font-weight: 500;
 }
+
+@media (max-width: 575px) {
+  #youtube_channel {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0
+  }
+}
+
 
 #art h3 {
   padding: 30px;
@@ -1834,6 +1908,7 @@ section {
 
 #videos .animate {
   animation: scale 2000ms linear infinite;
+  width: 200px;
 }
 
 #training .animate {
@@ -1886,6 +1961,35 @@ section {
   width: 50%;
   border-radius: 10px;
   color: white;
+}
+
+@media (max-width: 575px) {
+  #videos .title-section {
+    padding: 30px;
+    margin: 30px;
+    background: #0a53be;
+    width: 50%;
+    border-radius: 10px;
+    color: white;
+  }
+
+  #training .title-section {
+    padding: 30px;
+    margin: 30px;
+    background: #4c988e;
+    width: 50%;
+    border-radius: 10px;
+    color: white;
+  }
+
+  #science .title-section {
+    padding: 30px;
+    margin: 30px;
+    background: #7ac1e4;
+    width: 50%;
+    border-radius: 10px;
+    color: white;
+  }
 }
 
 #games .game {

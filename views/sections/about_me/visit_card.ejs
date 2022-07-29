@@ -6,7 +6,16 @@
                 <span style="color: rgba(238,240,242, 0.1)">Визитная карточка</span>
                 <h2>Визитная карточка</h2>
             </div>
-            <img class="hover-bubbles lazy" data-src="images/video_placeholder.jpg" width="70%"/>
+
+            <div style="width: 75%">
+                <a href="https://drive.google.com/file/d/1g8dKpaAzNEC13x1quoaAZH2kjTESxQa1/preview" class="glightbox22" data-gallery="glightbox22">
+                    <div class="gallery-item">
+                        <img style="object-fit: cover;"
+                             class="gallery-image hover-bubbles lazy"
+                             data-src="https://drive.google.com/thumbnail?id=1g8dKpaAzNEC13x1quoaAZH2kjTESxQa1">
+                    </div>
+                </a>
+            </div>
         </div>
         <ul class="bg-bubbles">
             <li></li>
@@ -22,3 +31,18 @@
         </ul>
     </div>
 </section>
+
+<script>
+    const glightbox22 = GLightbox({
+        selector:  '.glightbox22',
+        touchNavigation: true,
+        loop: true,
+        autoplayVideos: true,
+        onOpen: () => {
+
+        },
+        beforeSlideLoad: (slide, data) => {
+
+        }
+    });
+</script>
