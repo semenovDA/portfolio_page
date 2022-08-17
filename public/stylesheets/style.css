@@ -459,6 +459,7 @@ section {
 
 .video-gallery {
   margin: 0 150px;
+  height: 600px;
 }
 
 @media (max-width: 575px) {
